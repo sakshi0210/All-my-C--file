@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class complex
+{	int i,r;
+	public:
+		void getdata(int x,int y){
+			i=x;
+			r=y;
+		}
+		void display(){
+			cout<<i<<"+i"<<r<<endl;
+			
+}		complex operator+(complex c){
+				complex temp;
+				temp.i=i+c.i;
+				temp.r=r+c.r;
+				return temp;
+}
+ 		complex operator-(complex c){
+ 				complex temp;
+				temp.i=i-c.i;
+				temp.r=r-c.r;
+				return temp;
+}
+};
